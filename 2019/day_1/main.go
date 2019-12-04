@@ -1,4 +1,5 @@
 // Run in https://play.golang.org/
+// https://adventofcode.com/2019/day/1
 package main
 
 import (
