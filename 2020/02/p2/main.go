@@ -1039,8 +1039,8 @@ func main() {
 
 	}
 	for _, pw := range passwords {
-		// fmt.Printf("Checking password: %s...\nRequires: '%s' to be in position '%v' or '%v'\n", pw.password, pw.letter, pw.min, pw.max)
-		if pws := strings.Split(pw.password, ""); (pws[pw.min-1] == pw.letter || pws[pw.max-1] == pw.letter) && !(pws[pw.min-1] == pw.letter && pws[pw.max-1] == pw.letter) {
+		// fmt.Printf("Checking password: %s...\nRequires: '%s', '%v'-'%v' times\n", pw.password, pw.letter, pw.min, pw.max)
+		if count := strings.Count(pw.password, pw.letter); count >= pw.min && count <= pw.max {
 			// fmt.Printf("Password %s is correct!\n\n", pw.password)
 			correct++
 		} else {
