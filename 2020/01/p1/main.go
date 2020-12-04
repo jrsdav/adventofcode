@@ -13,8 +13,8 @@ func main() {
 			if catch == 2020 {
 				sum := input[i] * v
 				fmt.Println(sum)
+				return
 			}
 		}
 	}
-
 }
