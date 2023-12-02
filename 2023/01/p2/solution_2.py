@@ -1,5 +1,3 @@
-import re
-
 number_dict = {
 		'one': '1',
 		'two': '2',
