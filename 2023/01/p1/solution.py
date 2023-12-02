@@ -1,4 +1,4 @@
-input = open("input.txt", "r")
+input = open("../input.txt", "r")
 
 def extract_callibration_value(input):
   
